@@ -1,27 +1,32 @@
-# FrontendSan
+# NutriResult
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## Sobre o sistema
+ O sistema auxiliára a nuticionista a avaliar a evolução dos seus paciente
 
-## Development server
+## Frontend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Desenvolvido com  [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+* Bootstrap
+* Material UI
 
-## Code scaffolding
+### Fontes e paletas de cores
+As fontes definidas para o projetos foram a Orbitron e Fira-san, as mesmas já estão configuradas globalmente, para usar basta
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+` .exemplo-font {font-family: var(--orbitron) } `
+  A font orbiton dever ser usado para titulos e subtitulos enquando a fira-=san para os demais textos do sistema.
+  o mesmo exemplo pode ser aplicado as cores.
+  as cores definadas foram:
+    
+   <button style="min-width:100vw;background-color: #1E8A5D; color: white; border-radius: 8px; border: none; padding: 10px 24px;"> --main-color <br> Deve ser usado para como backgrounds das páginas</button>
+   
+   <button style="min-width:100vw;background-color: #2A6DB7; color: white; border-radius: 8px; border: none; padding: 10px 24px;">--second-color <br> Deve ser usado para como backgrounds dos titulos e menus</button>
 
-## Build
+   <button style="min-width:100vw; background-color: #FFD700; color: black; border-radius: 8px; border: none; padding: 10px 24px;"> action-btn <br> Deve ser usado para como backgrounds dos botões </button>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ <button style="min-width:100vw; background-color: #F4903D; color: white; border-radius: 8px; border: none; padding: 10px 24px;"> action2-btn <br> Deve ser usado para como backgrounds dos botões - levando em consideração para erros ou algo mais urgente</button>
 
-## Running unit tests
+<button style="min-width:100vw;background-color: #F5F5F5; color: black; border-radius: 8px; border: none; padding: 10px 24px;"> --main-text <br> Deve ser usado para como cores para as fontes</button>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<button style=" min-width:100vw;background-color: #333333; color: white; border-radius: 8px; border: none; padding: 10px 24px;"> --secondary-text <br> Deve ser usado para como cores para as fontes</button>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+As definições de cores podem sorfer alterações
