@@ -20,6 +20,7 @@ div img {
   margin-bottom: 30px;
 }
 
+
 @media screen and (max-width: 480px) {
   div img {
     width: 100%;
