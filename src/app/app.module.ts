@@ -11,6 +11,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { EmconstrucaoComponent } from './view/emconstrucao/emconstrucao.component';
 import { HomeComponent } from './view/home/home.component';
 import { NotfoundComponent } from './view/notfound/notfound.component';
+import { ContatoComponent } from './view/contato/contato.component';
+import { QuemSomosComponent } from './view/quem-somos/quem-somos.component';
+import { LoginComponent } from './view/login/login.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { NotfoundComponent } from './view/notfound/notfound.component';
     FooterComponent,
     EmconstrucaoComponent,
     HomeComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ContatoComponent,
+    QuemSomosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
