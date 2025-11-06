@@ -1,54 +1,99 @@
-<div
-  style="
-    min-width: 400px;
-    min-height: 400px;
-    background-color: var(--main-color);
-    margin-bottom: 20px;
-  "
->
-  <div
-    class="card"
-    style="background-color: var(--secondary-text); padding: 20px; margin: 20px"
-  >
-    <div class="card-title">
-      <h3 style="font-family: var(--orbitron)">resultnutri.com.br</h3>
+<mat-drawer-container class="sidenav-container">
+  <mat-drawer #drawer class="sidenav" mode="over" opened="false">
+    <div class="title-drawer">
+      <h3 class="title-ResultNutri">ResultNutri</h3>
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon
+          class="iconMenu"
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="close"
+        ></mat-icon>
+      </button>
     </div>
-    <p
-      class="card-body"
-      style="color: var(--main-text); font-family: var(--fira-sans)"
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestiae
-      doloremque quam fuga corrupti sit tempore exercitationem ipsam, animi
-      aliquid repudiandae consequatur veniam? Repudiandae dolor et veniam alias
-      culpa ad.
-    </p>
-  </div>
-</div>
-<div class="row">
-  <div
-    class="col"
-    style="
-      min-height: 400px;
-      min-width: auto;
-      background-color: var(--second-color);
-    "
-  ></div>
-  <div
-    class="col"
-    style="
-      min-height: 400px;
-      min-width: auto;
-      background-color: var(--action-btn);
-    "
-  ></div>
-  <div
-    class="col"
-    style="
-      min-height: 400px;
-      min-width: auto;
-      background-color: var(--action2-btn);
-    "
-  ></div>
-</div>
+    <div class="corpolinks">
+      <img
+        class="roboNutri"
+        src="../assets/img/roboNutri.png"
+        alt="Robonutri"
+      />
+      <ul>
+        <li>
+          <button
+            class="btn-links"
+            routerLink=""
+            matButton="elevated"
+            (click)="drawer.toggle()"
+          >
+            Home
+          </button>
+        </li>
+        <li>
+          <button
+            class="btn-links"
+            routerLink="contato"
+            matButton="elevated"
+            (click)="drawer.toggle()"
+          >
+            Contato
+          </button>
+        </li>
+        <li>
+          <button
+            class="btn-links"
+            routerLink="quem-somos"
+            matButton="elevated"
+            (click)="drawer.toggle()"
+          >
+            Quem Somos
+          </button>
+        </li>
+        <li>
+          <button
+            class="btn-links"
+            routerLink="login"
+            matButton="elevated"
+            (click)="drawer.toggle()"
+          >
+            Login
+          </button>
+        </li>
+        <li>
+          <button
+            class="btn-links"
+            routerLink="cadastrar"
+            matButton="elevated"
+            (click)="drawer.toggle()"
+          >
+            Cadastrar
+          </button>
+        </li>
+      </ul>
+    </div>
+  </mat-drawer>
 
-<router-outlet />
+  <div class="sidenav-bar">
+    <img
+      class="logResultinutri"
+      src="../assets/img/ResultNutriLogo.png"
+      alt="Logo ResultNutri"
+    />
+    <button
+      class="btn-open btn-close"
+      type="button"
+      mat-button
+      (click)="drawer.toggle()"
+    >
+      <mat-icon
+        class="iconMenu"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="menu"
+      ></mat-icon>
+    </button>
+  </div>
+  <div class="corpo">
+    <router-outlet />
+  </div>
+</mat-drawer-container>
+<app-footer />

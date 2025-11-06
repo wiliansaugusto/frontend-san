@@ -1,0 +1,16 @@
+.contatoBody {
+  min-height: 30vh;
+}
+
+.buttonsGroup i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+a {
+  padding: 10px 15px;
+  margin: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
