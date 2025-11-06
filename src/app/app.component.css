@@ -52,7 +52,7 @@
 }
 
 .sidenav {
-  min-height: 100vh;
+  height: max-content;
   width: 90%;
 }
 
@@ -80,7 +80,6 @@
 .corpolinks {
   display: flex;
   flex-direction: row;
-  min-height: 90%;
   align-items: center;
   justify-content: center;
 }
@@ -116,6 +115,7 @@ li {
 
   .corpolinks {
     flex-direction: column;
+    justify-content: start;
   }
 
   .roboNutri {

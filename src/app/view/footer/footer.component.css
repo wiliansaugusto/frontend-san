@@ -1,0 +1,12 @@
+div {
+  background-color: var(--main-color);
+  width: 100%;
+  height: auto;
+
+}
+
+.text-muted {
+  color: var(--secondary-text);
+  padding: 10px;
+
+}
